@@ -1,3 +1,7 @@
+This is a fork that fixes the node.js engine used from node12 to node16.
+
+---
+
 # mirror-branch action
 
 A Github Action to mirror one branch to another within the same repository
@@ -22,7 +26,7 @@ jobs:
     steps:
     - name: Mirror action step
       id: mirror
-      uses: google/mirror-branch-action@v1.0
+      uses: AndrewRadev/mirror-branch-action@main
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         source: 'SOURCE_BRANCH_NAME'
